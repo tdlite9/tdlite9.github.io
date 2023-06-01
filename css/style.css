@@ -1,5 +1,5 @@
 /*------------APPLIES TO ALL/REUSABLE-----------*/
-
+ 
 *{
     margin:0;
     padding:0;
@@ -58,11 +58,14 @@ section{
     width:75%;
     float:left;
 }
+.dark-background{
+    background-color:#292E37;
+}
 
 /*---------HEADER-----------*/
 
 #header{
-    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/city1.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/tech.jpg);
     height:100vh;
     background-position: center;
     background-size: cover;
@@ -76,41 +79,33 @@ section{
 }
 
 #header nav{
-    position: relative;
-    padding: 20px 10px;
+    position: fixed;
+    padding: 10px 10px;
+    width:100%;
+    z-index:2;
 }
 
-#header .menu{
-    display:none;
-}
-#header nav ul{
+nav ul{
     position:absolute;
     right:0;
     top:50%;
     transform:translate(0,-50%);
     list-style:none;
+    right:3%;
 }
 
-#header nav li{
+nav li{
     float:left;
     margin:0 15px;
 }
 
 #header nav img{
-    width:200px;
+    width:50px;
 }
 
 #header nav a{
     color:white;
     text-decoration: none;
-}
-
-#header .show{
-    display:block;
-} 
-
-#header .dropdown{
-    
 }
 
 #header .headline-container{
@@ -161,11 +156,11 @@ section{
     transition:background-color 1s;
 }
 
-
 /*-------------STEPS-----------*/
 
 #steps img{
     float:right;
+    height:500px;
 }
 
 #steps .circle{
@@ -270,25 +265,28 @@ section{
 /*---------STATS---------*/
 
 #stats{
-    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/city2.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/tech3.jpg);
     background-size:cover;
     background-position:center;
     text-align:center;
     padding:150px 0;
-}
+    color:white;
+}  
+
 
 #stats i{
     color:#549dc5;
     font-size:50px;
 }
 
-#stats h3, #stats p{
+#stats h3, #stats p, #stats h2{
     color:white;
 }
 
 #stats p{
     font-size:85px;
     font-weight:700;
+    padding-top:75px;
 }
 
 #stats h3{
@@ -299,7 +297,14 @@ section{
 /*------PRICING-------*/
 
 #pricing{
-    background-color:rgb(244,244,244);
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/tech2.jpg);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+
+#pricing h2{
+    color:white;
 }
 
 #pricing ul{
@@ -311,12 +316,12 @@ section{
 }
 
 #pricing li{
-    border-bottom: 1px solid lightgrey;
     list-style:none;
     color:#4e4d4d;
     font-size:20px;
     font-weight:300;
     padding:15px 0;
+    color:white;
 }
 
 #pricing .plan-name{
@@ -361,9 +366,10 @@ section{
     margin:10px 0;
 }
 
-#team i {
-    font-size:25px;
+#team i{
+    font-size:30px;
 }
+
 
 
 /*----Request---*/
@@ -435,7 +441,7 @@ footer p{
 /*--------------------------------------------------*/
 
 /*--------HEADER--------*/
-@media only screen and (max-width:440px){
+@media only screen and (max-width: 470px){
     #header .headline-container h1{
         font-size:40px;
     }
@@ -443,68 +449,46 @@ footer p{
     #header .headline-container h2{
         font-size:25px;
     }
+    
     #header .headline-container a{
         font-size:20px;
     }
-} 
-
-@media only screen and (max-width:700px){
-    #header nav img{
-        display:none;
-    }
-    
-    #header nav{
-        background-color:#292E37;
-        overflow:auto;
-        overflow-x:hidden;
-        position:fixed;
-        width:100%;
-    }
-    #header nav ul{
-        display:none;
-        position:relative;
-    }
-    #header nav li{
-        width:100%;
-        margin-bottom:30px;
-    }
-    #header .menu{
-        display:inline;
-        font-weight:300;
-    }
-    
 }
 
 
 /*--------STEPS--------*/
-@media only screen and (max-width:1175px){
+
+@media only screen and (max-width: 1200px){
     #steps .one-of-two{
         width:100%;
     }
     
-    #steps img{
+    #steps .one-of-two img{
         float:none;
-        width:40%;
     }
     
     #steps .iphone{
         text-align:center;
+        margin-bottom:50px;
     }
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:550px){
     #steps .circle{
         float:none;
         margin: 0 auto;
-        margin-top:50px;
     }
-    #steps .one-of-two{
-        text-align:center;
-    }
+    
     #steps .steps-container{
-        margin:0;
+        text-align:center;
+        margin-left:0;
+    }
+    
+    #steps .one-of-two img{
+        width:70%;
     }
 }
+
 
 /*------------BENEFITS-------------*/
 
@@ -629,13 +613,44 @@ footer p{
     }
 }
 
+/*  START MOBILE NAV*/
 
+.menu{
+    display:none;
+}
 
+.show{
+    max-height:300px;
+}
+nav{
+        background-color:#292E37;
+    }
 
-
-
-
-
+@media only screen and (max-width: 700px){
+    #header nav img{
+        display:none;
+    }
+    
+    nav ul{
+        max-height: 0;
+        overflow:hidden;
+        transform:translate(0,0);
+        position:static;
+    }
+    
+    nav{
+        background-color:#292E37;
+    }
+    
+    .mobile-menu{
+        display:block;
+    }
+    
+    nav li{
+        float:none;
+        padding-bottom:25px;
+    }
+}
 
 
 
