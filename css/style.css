@@ -1,0 +1,661 @@
+/*------------APPLIES TO ALL/REUSABLE-----------*/
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+}
+   
+ 
+.section-headline{
+    color: #4e4d4d;
+    text-align: center;
+    font-size:50px;
+    font-weight:300;
+}
+
+section{
+    padding:70px 0;
+}
+
+.line{
+    height:2px;
+    width:80px;
+    background-color:lightgray;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.row{
+    width:80%;
+    margin:0 auto;
+    overflow:auto;
+
+}
+
+.one-of-two{
+    width:50%;
+    float:left;
+}
+
+.one-of-three{
+    width:33.3%;
+    float:left;
+}
+
+.one-of-four{
+    width:25%;
+    float:left;
+}
+
+.two-of-three{
+    width:66.66%;
+    float:left;
+}
+
+.three-of-four{
+    width:75%;
+    float:left;
+}
+
+/*---------HEADER-----------*/
+
+#header{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/city1.jpg);
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    position:relative;
+}
+
+#header .dots{
+    background-image: url('../img/pattern-bg.png');
+    height:100%;
+}
+
+#header nav{
+    position: relative;
+    padding: 20px 10px;
+}
+
+#header .menu{
+    display:none;
+}
+#header nav ul{
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translate(0,-50%);
+    list-style:none;
+}
+
+#header nav li{
+    float:left;
+    margin:0 15px;
+}
+
+#header nav img{
+    width:200px;
+}
+
+#header nav a{
+    color:white;
+    text-decoration: none;
+}
+
+#header .show{
+    display:block;
+} 
+
+#header .dropdown{
+    
+}
+
+#header .headline-container{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+#header .headline-container h1{
+    font-size:60px;
+    font-weight:400;
+}
+
+#header .headline-container h2{
+    font-size:45px;
+    font-weight:300;
+    margin-bottom:45px;
+}
+
+#header .headline-container a{
+    color:white;
+    text-decoration:none;
+    border:1px solid white;
+    font-size: 25px;
+    font-weight:300;
+    padding:5px 15px;
+}
+
+
+#header nav a {
+    color:white;
+    text-decoration:none;
+    font-weight:300;
+}
+
+#header i{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%, 0);
+    font-size: 50px;
+    color:bisque;
+}
+
+#header .headline-container a:hover{
+    background-color: #24e098;
+    transition:background-color 1s;
+}
+
+
+/*-------------STEPS-----------*/
+
+#steps img{
+    float:right;
+}
+
+#steps .circle{
+    border:1px solid lightgray;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    position:relative;
+    float:left;
+    margin-right:15px;
+}
+
+#steps .circle p{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:20px;
+    color:grey;
+    font-weight:300;
+}
+
+#steps .steps-container{
+    overflow:auto;
+    margin-bottom:70px;
+    margin-left:50px;
+    margin-top:50px;
+}
+
+
+#steps h3{
+    font-size:25px;
+    
+}
+
+#steps .steps-description{
+    font-weight:300;
+}
+
+/*-------------BENEFITS-----------*/
+
+#benefits{
+    background-color:#F1F1F1;
+    text-align:center;
+}
+
+
+#benefits h3{
+    color:darkcyan;
+    font-size:30px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#benefits p{
+    text-align:center;
+    color:gray;
+    font-weight:300;
+    padding:0 5px;
+    font-size:18px;
+}
+
+#benefits img{
+    width:80%;
+    overflow:auto;
+    margin:0 auto;
+}
+
+#benefits .bottom{
+    text-align:center;
+    margin-top:100px;
+}
+
+#benefits img{
+    border-bottom: solid lightgray 1px;
+    padding-bottom:15px;
+    margin-bottom:20px;
+    
+}
+
+#benefits .button{
+    text-decoration:none;
+    color:white;
+    background-color:#FF9F37;
+    font-weight: 700;
+    padding: 25px;
+    width: 300px;
+    display:block;
+    margin:0 auto;
+    margin-top: 40px;
+}
+
+#benefits i{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+#benefits a{
+    text-decoration:none;
+}
+
+/*---------STATS---------*/
+
+#stats{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/city2.jpg);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:150px 0;
+}
+
+#stats i{
+    color:#549dc5;
+    font-size:50px;
+}
+
+#stats h3, #stats p{
+    color:white;
+}
+
+#stats p{
+    font-size:85px;
+    font-weight:700;
+}
+
+#stats h3{
+    font-size:25px;
+    font-weight:300;
+}
+
+/*------PRICING-------*/
+
+#pricing{
+    background-color:rgb(244,244,244);
+}
+
+#pricing ul{
+    border:1px solid lightgrey;
+    text-align:center;
+    width:250px;
+    margin:0 auto;
+    padding:0 60px;
+}
+
+#pricing li{
+    border-bottom: 1px solid lightgrey;
+    list-style:none;
+    color:#4e4d4d;
+    font-size:20px;
+    font-weight:300;
+    padding:15px 0;
+}
+
+#pricing .plan-name{
+    color:#4e4d4d;
+    font-size:20px;
+    padding-bottom: 0;
+    border-bottom:0;
+}
+
+#pricing .plan-price{
+    color: #549dc5;
+    font-size:35px;
+    font-weight:700;
+    padding-top:0;
+}
+
+#pricing a{
+    background-color:#468eb5;
+    padding:10px 30px;
+    color: white;
+    font-weight:400;
+    text-decoration:none;
+}
+
+#pricing .no-bottom-border{
+    border-bottom:none;
+}
+
+/*-----TEAM------*/
+
+#team{
+    text-align:center;
+    color:#4e4d4d;
+}
+
+#team h3{
+    font-size: 25px;
+    margin-top:10px;
+}
+
+#team p{
+    margin:10px 0;
+}
+
+#team i {
+    font-size:25px;
+}
+
+
+/*----Request---*/
+
+#request{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/driving1.jpg);
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    color:white;
+}
+
+#request h2{
+    color:white;
+}
+
+#request .one-of-three{
+    text-align:right;
+}
+
+#request input[type="text"]{
+    width: 50%;
+    height:30px;
+}
+
+#request input[type="submit"]{
+    text-decoration:none;
+    background-color:#468eb5;
+    color:white;
+    padding:10px 30px;
+    font-weight:400; 
+    font-size:18px;
+    border:0;
+}
+
+#request .row{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/*------Footer------*/
+
+footer{
+    background-color: #292E37;
+    padding:30px 0;
+    
+}
+
+footer a{
+    text-decoration:none;
+    color:white;
+}
+
+footer li{
+    list-style:none;
+    float:left;
+    padding:0 20px;
+}
+
+footer p{
+    text-align:center;
+    color:lightgray;
+    margin-top:15px;
+}
+
+
+/*--------------------------------------------------*/
+/*-------------------MEDIA QUERIES------------------*/
+/*--------------------------------------------------*/
+
+/*--------HEADER--------*/
+@media only screen and (max-width:440px){
+    #header .headline-container h1{
+        font-size:40px;
+    }
+    
+    #header .headline-container h2{
+        font-size:25px;
+    }
+    #header .headline-container a{
+        font-size:20px;
+    }
+} 
+
+@media only screen and (max-width:700px){
+    #header nav img{
+        display:none;
+    }
+    
+    #header nav{
+        background-color:#292E37;
+        overflow:auto;
+        overflow-x:hidden;
+        position:fixed;
+        width:100%;
+    }
+    #header nav ul{
+        display:none;
+        position:relative;
+    }
+    #header nav li{
+        width:100%;
+        margin-bottom:30px;
+    }
+    #header .menu{
+        display:inline;
+        font-weight:300;
+    }
+    
+}
+
+
+/*--------STEPS--------*/
+@media only screen and (max-width:1175px){
+    #steps .one-of-two{
+        width:100%;
+    }
+    
+    #steps img{
+        float:none;
+        width:40%;
+    }
+    
+    #steps .iphone{
+        text-align:center;
+    }
+}
+
+@media only screen and (max-width:480px){
+    #steps .circle{
+        float:none;
+        margin: 0 auto;
+        margin-top:50px;
+    }
+    #steps .one-of-two{
+        text-align:center;
+    }
+    #steps .steps-container{
+        margin:0;
+    }
+}
+
+/*------------BENEFITS-------------*/
+
+@media only screen and (max-width:900px){
+    #benefits .one-of-three{
+        width:100%;
+    }
+    
+    #benefits .one-of-three h3{
+        margin:0;
+    }
+    
+    #benefits p{
+        margin-bottom:40px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    #benefits img{
+        display:none;
+    }
+}
+
+/*------------STATS-------------*/
+
+@media only screen and (max-width: 1250px){
+    #stats .one-of-four{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #stats p{
+        font-size: 65px;
+    }
+}
+
+/*------------PRICING-------------*/
+
+@media only screen and (max-width: 1550px){
+    #pricing ul{
+        padding: 0 25px;
+        width: 275px;
+    }    
+}
+
+@media only screen and (max-width: 1250px){
+    #pricing ul{
+        width: 220px;
+    }    
+}
+
+@media only screen and (max-width: 1100px){
+    #pricing .one-of-three{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    #pricing ul{
+        width: 200px;
+    }    
+}
+
+/*------------TEAM-------------*/
+
+@media only screen and (max-width:1440px){
+    #team img{
+        width:80%;
+    }
+}
+
+@media only screen and (max-width:850px){
+    #team .one-of-three{
+        width:100%;
+        margin-bottom:50px;
+    }
+    
+    #team img{
+        width:50%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    #team img{
+        width:75%;
+    }
+}
+
+
+/*------------REQUESTS------------*/
+
+@media only screen and (max-width:700px){
+    #request .one-of-three, #request .two-of-three{
+        width:100%;
+        text-align:center;
+    }
+    
+    #request input[type="text"]{
+        margin: 0 auto;
+        width:80%;
+    }
+}
+
+/*----------FOOTER-----------*/
+
+@media only screen and (max-width:1150px){
+    #footer .three-of-four, #footer .one-of-four{
+        width: 100%;
+    }
+    
+    #footer li{
+        float:none;
+        display:inline-block;
+    }
+    
+    #footer ul{
+        text-align: center;
+        margin-bottom:15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
